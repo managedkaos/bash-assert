@@ -4,7 +4,7 @@ A quick and dirty bash assertion function
 # Comparison operators 
 _(summarized from http://www.tldp.org/LDP/abs/html/comparison-ops.html)_
 
-## integer comparison
+## Integer Comparison
 Operator|Definition                                               |Example
 --------|---------------------------------------------------------|-------
 -eq     | is equal to                                             | $a -eq $b
@@ -18,12 +18,12 @@ Operator|Definition                                               |Example
 >       | is greater than (within double parentheses)             | (($a > $b))
 >=      | is greater than or equal to (within double parentheses) | (($a >= $b))
 
-## string comparison
+## String Comparison
 Operator|Definition                                               |Example
 --------|---------------------------------------------------------|-------
-=       | is equal to                                             | if [ $a = $b ] Note the whitespace framing the =.
-==      | is equal to                                             | if [ $a == $b ] 
-!=      | is not equal to                                         | if [ $a != $b ]
-<       | is less than, in ASCII alphabetical order               | if [[ $a < $b ]] if [ $a \< $b ] Note that the < needs to be escaped within a [ ] construct.
->       | is greater than, in ASCII alphabetical order            | if [[ $a > $b ]] if [ $a \> $b ] Note that the > needs to be escaped within a [ ] construct.
+=       | is equal to                                             | $a = $b
+==      | is equal to                                             | $a == $b
+!=      | is not equal to                                         | $a != $b
+<       | is less than, in ASCII alphabetical order               | $a < $b 
+>       | is greater than, in ASCII alphabetical order            | $a > $b
 -z      | string is null, that is, has zero length                |
