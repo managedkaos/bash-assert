@@ -4,14 +4,14 @@ Documenting how to write an assertion function in Bash.
 Comparison operators (from http://www.tldp.org/LDP/abs/html/comparison-ops.html)
 
 # integer comparison
-|operator|Definition|Example|
+|Operator|Definition|Example|
 |--------|----------|-------|
-|-eq| is equal to |if [ "$a" -eq "$b" ]|
-|-ne| is not equal to |if [ "$a" -ne "$b" ]|
-|-gt| is greater than |if [ "$a" -gt "$b" ]|
-|-ge| is greater than or equal to |if [ "$a" -ge "$b" ]|
-|-lt| is less than |if [ "$a" -lt "$b" ]|
-|-le| is less than or equal to |if [ "$a" -le "$b" ]|
+|-eq| is equal to | "$a" -eq "$b" |
+|-ne| is not equal to | "$a" -ne "$b" |
+|-gt| is greater than | "$a" -gt "$b" |
+|-ge| is greater than or equal to | "$a" -ge "$b" |
+|-lt| is less than | "$a" -lt "$b" |
+|-le| is less than or equal to | "$a" -le "$b" |
 |<| is less than (within double parentheses) |(("$a" < "$b"))|
 |<=| is less than or equal to (within double parentheses) |(("$a" <= "$b"))|
 |>| is greater than (within double parentheses) |(("$a" > "$b"))|
