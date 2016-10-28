@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # initialize the counters
 test_count=0
 pass_count=0
@@ -38,9 +36,3 @@ function finish() {
 
 # set the trap for the finish function
 trap finish EXIT
-
-# example assertions; they should all pass. Change the comparisons to see a failure
-assert "405 is greater than 101" "405 -gt 101"
-assert "The whoami command output should match $USER" "$(whoami) = $USER"
-assert "The pwd command output should match $PWD" "$(pwd) == $PWD"
-assert "The process count should be greater than 1: $(ps -elf | wc -l)" "$(ps -elf | wc -l) -gt 1"

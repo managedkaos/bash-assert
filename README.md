@@ -1,7 +1,11 @@
 # bash-assert
 A quick and dirty bash assertion function
 
-# Comparison operators 
+![assert "It's going to be okay."](http://managedkaos.com/wp-content/uploads/2016/10/xkcd-assert-its-going-to-be-okay.png)
+
+# What is an assertion function?
+
+# Comparison Operators 
 _(summarized from http://www.tldp.org/LDP/abs/html/comparison-ops.html)_
 
 ## Integer Comparison
@@ -13,10 +17,6 @@ Operator|Definition                                               |Example
 -ge     | is greater than or equal to                             | $a -ge $b
 -lt     | is less than                                            | $a -lt $b
 -le     | is less than or equal to                                | $a -le $b
-<       | is less than (within double parentheses)                | (($a < $b))
-<=      | is less than or equal to (within double parentheses)    | (($a <= $b))
->       | is greater than (within double parentheses)             | (($a > $b))
->=      | is greater than or equal to (within double parentheses) | (($a >= $b))
 
 ## String Comparison
 Operator|Definition                                               |Example
@@ -26,4 +26,3 @@ Operator|Definition                                               |Example
 !=      | is not equal to                                         | $a != $b
 <       | is less than, in ASCII alphabetical order               | $a < $b 
 >       | is greater than, in ASCII alphabetical order            | $a > $b
--z      | string is null, that is, has zero length                |
