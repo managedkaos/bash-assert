@@ -25,7 +25,7 @@ function assert() {
     return 0
 }
 
-# defind the finish function
+# define the finish function
 function finish() {
     # print a summary of the test, pass, and fail counts
     echo "Tests: $test_count, Passed: $pass_count, Failed: $fail_count"
