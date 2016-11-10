@@ -29,3 +29,51 @@ Operator|Definition                                               |Example
 !=      | is not equal to                                         | $a != $b
 <       | is less than, in ASCII alphabetical order               | $a < $b 
 >       | is greater than, in ASCII alphabetical order            | $a > $b
+
+# How to Use This function
+
+# Examples
+
+## Numeric comparisons with constants
+Code:
+```
+assert "405 is equal to 405" "405 -eq 405"
+assert "405 is not equal to 5" "405 -ne 5"
+assert "405 is greater than 101" "405 -gt 101"
+assert "405 is less than 710" "405 -lt 710"
+assert "405 is greater than or equal to 210" "405 -ge 210"
+assert "405 is less than or equal to 605" "405 -le 605"
+```
+Output:
+```
+[ OK ] 405 is equal to 405
+[ OK ] 405 is not equal to 5
+[ OK ] 405 is greater than 101
+[ OK ] 405 is less than 710
+[ OK ] 405 is greater than or equal to 210
+[ OK ] 405 is less than or equal to 605
+```
+## Numeric comparisons with system calls
+Code:
+```
+assert "The process count ($(ps -elf | wc -l | sed 's/ //g')) is greater than 1" "$(ps -elf | wc -l) -gt 1"
+assert "Todays date ($(date +%F)) is greater than yesterday's ($(date -v-1d +%F))" "$(date +%s) -gt $(date -v-1d +%s)"
+```
+Output:
+```
+[ OK ] The process count (294) is greater than 1
+[ OK ] Todays date (2016-11-10) is greater than yesterday's (2016-11-09)
+```
+## String comparisons with environment variables
+Code:
+```
+assert "The pwd command output should match $PWD" "$(pwd) == $PWD"
+assert "The whoami command output should match $USER" "$(whoami) = $USER"
+assert "The hostname command output should match $HOSTNAME" "$(hostname) == $HOSTNAME"
+```
+Output:
+```
+[ OK ] The pwd command output should match /Users/jenkm056/Workspace/Bash-Assert
+[ OK ] The whoami command output should match jenkm056
+[ OK ] The hostname command output should match GL-JENKM000-M1
+```
