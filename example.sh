@@ -20,5 +20,5 @@ assert "Todays date ($(date +%F)) is greater than yesterday's ($(date -v-1d +%F)
 echo
 echo "String comparisons (with environment variables)..."
 assert "The pwd command output should match $PWD" "$(pwd) == $PWD"
-assert "The whoami command output should match $USER" "$(whoami) = $USER"
+assert "The whoami command output should match $USER" "$(whoami) == $USER"
 assert "The hostname command output should match $HOSTNAME" "$(hostname) == $HOSTNAME"
