@@ -28,7 +28,7 @@ Operator|Definition                                               |Example
 ==      | is equal to                                             | $a == $b
 !=      | is not equal to                                         | $a != $b
 <       | is less than, in ASCII alphabetical order               | $a < $b 
->       | is greater than, in ASCII alphabetical order            | $a > $b
+\>       | is greater than, in ASCII alphabetical order            | $a > $b
 
 # How to Use This function
 
