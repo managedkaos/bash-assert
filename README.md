@@ -62,7 +62,7 @@ assert "Todays date ($(date +%F)) is greater than yesterday's ($(date -v-1d +%F)
 Output:
 ```
 [ OK ] The process count (294) is greater than 1
-[ OK ] Todays date (2016-11-10) is greater than yesterday's (2016-11-09)
+[ OK ] Todays date (2022-12-01) is greater than yesterday's (2022-12-01)
 ```
 ## String comparisons with environment variables
 Code:
